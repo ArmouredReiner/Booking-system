@@ -153,7 +153,7 @@ function App() {
     setOrderStatus(null)
 
     try {
-      const response = await fetch('http://localhost:3001/order', {
+      const response = await fetch('/order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items: cartItems, customer: customerInfo }),
